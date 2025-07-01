@@ -1,0 +1,10 @@
+; These are comment lines...
+; Line syntax is the following
+; 	Left, Top, Right, Bottom, Op or '-', file or '-', param or '-',  dir or '-', Maximized (1/0), closeWindow  after action(1/0)
+, These are in fact parameters for ShellExecute Windows functions
+;
+; Here it is, but first line must be Quit button
+;
+244	393	325	432	-	-		-		-				0	1
+90	200	585	273	-	lbxstart.exe	/O=FR/L		\litebox			0	1
+90	283	585	351	open	\index.htm	-		-			1	1

@@ -1,0 +1,43 @@
+; Tips file for OLB/LB 3.60
+; Do not Edit, please
+
+Um diese Tipps nicht mehr anzuzeigen, klicken Sie auf "Arbeitsbereich / LiteBox-Tipps anzeigen" oder drücken Sie STRG+T.
+Durch Drücken der ESC-Taste können Sie die Steuerleiste jederzeit ein- bzw. auszublenden.
+Um die Steuerleiste horizontal oder vertikal anzuzeigen, doppelklicken Sie darauf oder drücken Sie Strg+B.
+Doppelklicken Sie auf ein Bild einer Serie, um es im Format 1x1 anzuzeigen.
+Beim Zeichnen von LINIEN können Sie mit den Tasten STRG und UMSCHALT Pfeile einfügen.
+Beim Anbringen von MARKIERUNGEN können Sie mit den Tasten STRG und UMSCHALT die Markierung ändern.
+Um eine  ELLIPSE zu zeichnen, drücken Sie die STRG-Taste und zeichnen Sie einen KREIS.
+Wenn Sie 1, 2 oder 3 Serienanzeigen geöffnet haben, können Sie mit der Taste F3 die Serienanordnung ändern.
+Bei DUAL MONITOR-Arbeitsstationen wechseln Sie mit STRG+F3 zwischen MONO- und DUAL-Konfiguration.
+Drücken Sie die Umschalttaste und verwenden Sie die LINKE MAUSTASTE, um Bilder im AUSWAHL-Modus zu VERSCHIEBEN.
+Mit der STRG-Taste und der LINKEN MAUSTASTE können Sie Bilder im AUSWAHL-Modus VERGRÖSSERN bzw. VERKLEINERN.
+Drücken Sie die ALT-Taste und verwenden Sie die LINKE MAUSTASTE, um im AUSWAHL-Modus das WINDOWING für Bilder zu ändern.
+Für ein autom. Windowing zeichnen Sie im WINDOWING-Modus mit der STRG-Taste und der LINKEN MAUSTASTE einen ROI-Bereich.
+Verwenden Sie auch die RECHTE MAUSTASTE. Sie können damit schnell durch Bilder blättern!
+Mit dem MAUSRAD können Sie durch die Bilder in einer Serie blättern.
+Mit einem LINKEN MAUSKLICK auf die Titelleiste einer Serie gelangen Sie zu einer bestimmten Position innerhalb der Serie.
+Mit den PFEILTASTEN (nach rechts und links) wechseln Sie in einer Serie von einem Bild zum andern.
+Die MITTLERE MAUSTASTE ermöglicht INTERAKTIVES ZOOMEN eines Bildes im Format 1x1.
+Sie können dem FILM COMPOSER problemlos Bilder HINZUFÜGEN: Einfach ein Bild im Auswahlmodus mit der linken Maustaste per DRAG-and-DROP einfügen.
+Mit der DRAG-AND-DROP-Funktion können Sie Bilder im FILM COMPOSER auch neu anordnen.
+Die im FILM COMPOSER angezeigte Zahl gibt die Anzahl der enthaltenen Filme an.
+Die anzuzeigenden Studieninformationen definieren Sie per LINKSKLICK auf den SPALTENTITEL der STUDIENLISTE.
+Sie können eine STUDIENLISTE neu organisieren, indem Sie die SPALTENTITEL mit der LINKEN MAUSTASTE verschieben.
+Sie können mehrere Studien auf einmal abrufen, indem Sie die Mehrfachauswahl verwenden.
+HINTERGRUNDPROZESSE können Sie entfernen oder abbrechen, indem Sie mit der RECHTEN MAUSTASTE darauf klicken.
+Im VERGRÖSSERUNGSMODUS ändern Sie mit dem MAUSRAD den Zoomfaktor.
+Die Arbeitsweise der LUPE passt Ihnen nicht? Drücken Sie STRG+M, um Sie zu ändern...
+Das Dialogfeld "Einstellungen" öffnen Sie ganz einfach mit der Taste F9.
+Um DICOM-Informationen zum ausgewählten Bild anzuzeigen, drücken Sie F2.
+*Is was, Doc?
+*Klicken Sie mich an. Ich zeige Ihnen, wie der Hase läuft.
+*Also, wie wär's mit ein paar guten Tipps?
+*Okay, mein Outfit könnte besser sein. Der Designer war wohl etwas überarbeitet...
+*Ich weiß nicht was soll es bedeuten. Daß ich so traurig bin :-(
+*Schon einen Blick auf die Hilfedatei geworfen? Sie enthält nützliche Informationen. Drücken Sie einfach F1.
+*Die Hilfedatei enthält viele nützliche Tipps...
+*Dürfte ich jetzt um eine kleine Pause bitten...
+*Mir wackeln schon die Ohren...
+*Jetzt werde ich seekrank...
+*Wie? Noch nie einen französischen seekranken Hasen gesehen?

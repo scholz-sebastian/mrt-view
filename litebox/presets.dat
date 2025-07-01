@@ -1,0 +1,18 @@
+; Comment line here
+
+; Format is the following
+; Modality <tab> Name <tab> winWidth <tab> winLevel
+
+; Notes:
+; 1) Modality * means any modality. Mandatory line
+; 2) Modality is the image declared modality, not image storage
+; SOP Class
+
+*	Default	0	0
+CT	Brain	100	35
+CT	Abdomen	250	45
+CT	Pelvis	300	45
+CT	Mediastinum	440	45
+CT	Bone	4000	500
+CT	Lung	2000	-500
+CT	Vertebrae	2000	350

@@ -1,0 +1,113 @@
+; This is a comment line (line starting with a semi-colon)
+; In this file, you can specify additionnal text overlays to be displayed 
+; on images according to their modality (CT, MR...) or their SOP Class prefix.
+; The SOP Class prefix is a short character string defined for each DICOM Storage SOP Class,
+; and used internally for DICOM filenames.
+
+; So, for example, for Ehhanced CT images, SOP Class prefix is CTe, but modality is CT.
+; Traditional Computed Tomography images have CT for both modality and SOP Class Prefix value.
+; Historical Secondary Capture images have SC for SOP Class prefix, but may have CT, MR, US, ...
+; for modality..
+; For a given image, a [section] related to SOP Class prefix is searched before.
+; If not found, a [section] with image modality is searched.
+; If not found, a [section] named [DEFAULT] is searched.
+
+; The following keywords set the locations where you can show the annotations:
+; 	TR: Top Right
+; 	BR: Bottom Right
+; 	TL: Top Left
+; 	BL: Bottom Left
+
+; References to DICOM tags can be specified as follows:
+; 1) Using the following syntax: %gggg,eeee where 'gggg' is the 
+;    group value, and 'eeee' is the element value.
+; 2) Using the tag names as they exist in the image DICOM information and 
+;    specifying them between the < and > characters.
+; For example, %0010,0010 and <PatientsName> both refer to the same DICOM tag.
+
+; To find tag values and names, open an image and press the F2 key.
+
+; --
+; Some keywords may be used for "dynamic" information. They are the following:
+;		$IMGNUMBER
+;		$MODALITY 
+;		$POSITION
+;		$WINDOWING
+;		$SERIESNUMBER
+;		$LATERALITY
+; You can also ask for a given modality NOT to display hardcoded overlays.
+; Just start your modality section with NO HARCODED OVERLAY
+
+
+; --
+; Character fonts
+; You may redefine the 4 default character fonts if you wish.
+$TL FONT Verdana,8
+$TR FONT Verdana,8
+$BL FONT Verdana,8
+$BR FONT Verdana,8
+; When defined at this level, they will be the fonts used by default for all images.
+; However, if such lines appear in a [modality] section, they will only concern this modality.
+
+; The initial content of this file defines as a sample 3 overlay sets :
+; - One for CT images,
+; - One for OP (Ophtalmic) images,
+; - One for other images.
+
+; CT Images
+; -----------
+; 6 empty lines on the top left and KVP.
+; On the top right, the institution name, and on the next line, 
+; the patient's sex, age and the acquisition date.
+; Define a dedicated section for Enhanced CT images, as some information may be located
+; in the SharedFunctionalGroupSequence. Here find KVP value here.
+
+[CTe]
+TL
+TL
+TL
+TL
+TL
+TL
+TL KVP :<SharedFunctionalGroupsSequence>\%0018,9325\<KVP>
+TR %0008,0080
+TR %0010,0040 %0010,1010 %0008,0022
+
+[CT]
+TL
+TL
+TL
+TL
+TL
+TL
+TL KVP :<KVP>
+TR %0008,0080
+TR %0010,0040 %0010,1010 %0008,0022
+
+; OP Modality
+; -----------
+; This example completly designs the whole set of overlays for OP (Ophtalmic)
+; modality images 
+; Character fonts are also redefined
+[OP]
+NO HARCODED OVERLAY
+$TL FONT Verdana,10
+$TR FONT Verdana,8
+$BL FONT Comic Sans MS,28
+$BR FONT Verdana,8
+TL <PatientsName>
+TL Sex: <PatientsSex> ID: <PatientID>
+TL Img: $IMGNUMBER
+TL $MODALITY
+BR $ZOOM
+BR
+BR
+BL <Laterality>
+
+; Other Modalities
+; --------------------
+; Use harcoded overlays,
+; and add the institution name on the top right.
+
+[DEFAULT]
+TR <InstitutionName>

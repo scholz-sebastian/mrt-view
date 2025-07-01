@@ -1,0 +1,9 @@
+; Preferences Patient Reconciliation file
+; Line format is :
+; Label <tab> DicomTag <tab> PreviousValue <tab> WasSelected
+; 
+Name des Patienten	(0010,0010)		1
+Patientennummer	(0010,0020)		1
+Geburtsdatum	(0010,0030)		1
+Geschlecht	(0010,0040)		1
+Aufnahmenummer	(0008,0050)		1
